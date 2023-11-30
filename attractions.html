@@ -5,199 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Attractions</title>
 
-    <style>
-      body {
-        margin: 0; /* Remove default margin */
-        padding: 0; /* Remove default padding */
-      }
-
-      header {
-        background-color: #FEDDBB; /* Background color for the header */
-        padding: 10px 20px; /* Adjust header padding as needed */
-      }
-
-      .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-
-      .logo {
-        flex: 0 0 auto; /* Ensures the logo doesn't grow or shrink */
-      }
-
-      .logo img {
-        max-width: 100px; /* Adjust the size of the logo as needed */
-      }
-
-      .nav-links {
-        list-style: none;
-        display: flex;
-        margin-left: auto; /* Pushes the navigation links to the right */
-      }
-
-      .nav-links li {
-        margin-left: 20px; /* Adjust the spacing between the navigation items */
-      }
-
-      .nav-links a {
-        text-decoration: none;
-        color: #2B405B; /* Change the color of the links as needed */
-      }
-
-      .attraction-image {
-        height: 50vh; /* 100% of viewport height */
-        background-image: url('images/attractions-image.jpeg');
-        background-size: cover;
-        background-position: center;
-      }
-
-      .main-content {
-        padding: 0 20px; /* Adjust padding as needed */
-      }
-
-     /* Styles for the dropdowns */
-    .dropdowns {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr); /* 3 columns */
-      grid-gap: 10px; /* Adjust gap between columns */
-      padding: 20px 0; /* Padding top and bottom */
-    }
-
-    /* Styles for the select dropdown elements */
-    .dropdowns select {
-      width: 100%; /* Full width */
-      padding: 10px; /* Adjust padding */
-      font-size: 16px; /* Adjust font size */
-      border: 2px solid #2B405B; /* Border color */
-      border-radius: 5px; /* Rounded corners */
-      background-color: #fff; /* Background color */
-      /* Add any other desired styles */
-    }
-
-    /* Styles for the result images */
-    .searchResultImages {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      padding: 20px 0; /* Padding top and bottom */
-    }
-
-    .searchResultImages img {
-      width: calc(25% - 15px); /* Set width for each image */
-      margin-bottom: 20px; /* Adjust spacing between rows */
-      border-radius: 8px; /* Rounded corners for images */
-      box-sizing: border-box;
-      /* Additional styles for image appearance */
-    }
-
-    /* Styles for the search button */
-    .search-button {
-      padding: 10px 20px; /* Adjust button padding */
-      background-color: #2B405B; /* Button background color */
-      color: #fff; /* Button text color */
-      border: none; /* Remove button border */
-      border-radius: 5px; /* Rounded corners */
-      cursor: pointer; /* Change cursor on hover */
-      transition: background-color 0.3s ease; /* Smooth transition on hover */
-    }
-
-    .search-button:hover {
-      background-color: #1E293B; /* Darker color on hover */
-    }
-
-    /* Styles for the footer */
-footer {
-  background-color: #FEDDBB; /* Footer background color */
-  color: #2B405B; /* Footer text color */
-  padding: 30px 0; /* Adjust footer padding */
-  text-align: center; /* Align content to center */
-}
-
-.footer-top,
-.footer-bottom {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 10px; /* Adjust margin between sections */
-}
-
-.footer-logo img {
-  max-width: 100px; /* Adjust the size of the footer logo */
-  height: auto;
-}
-
-.footer-nav ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-nav ul li {
-  display: inline;
-  margin: 0 10px; /* Adjust margin between links */
-}
-
-.footer-nav ul li a {
-  color: #2B405B; /* Link color */
-  text-decoration: none;
-}
-
-.footer-top {
-  border-bottom: 1px solid #2B405B; /* Add a single line between top links and logo */
-}
-
-    </style>
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
-  <header>
-    <nav aria-label="Main navigation" class="navbar">
-      <div class="logo">
-        <img src="images/logo.png" alt="Theme Park Logo" />
-      </div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="attractions.html">Attractions</a></li>
-        <li><a href="Plan_your_visit.html">Plan your visit</a></li>
-        <li><a href="">Tickets</a></li>
-      </ul>
-    </nav>
-  </header>
-
+  <body>
+    <header>
+      <nav aria-label="Main navigation" class="navbar">
+        <div class="logo">
+          <img src="images/logo.png" alt="Theme Park Logo" />
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="attractions.html">Attractions</a></li>
+          <li><a href="Plan_your_visit.html">Plan your visit</a></li>
+        </ul>
+      </nav>
+    </header>
 
     <main class="main-content">
-      <!-- Attractions Header -->
       <h1>Attractions</h1>
       <div class="attraction-image"></div>
-     <div class="dropdowns">
-      <select name="attractionType" id="attractionType">
-        <option value="">Attraction Type</option>
-        <option value="placeHolder1">Placeholder 1</option>
-        <option value="placeHolder2">Placeholder 2</option>
-        <option value="placeHolder3">Placeholder 3</option>
-        <option value="placeHolder4">Placeholder 4</option>
-        <!-- Add options here -->
-      </select>
+      <div class="dropdowns">
+        <select name="attractionType" id="attractionType">
+          <option value="">Attraction Type</option>
+          <option value="placeHolder1">Placeholder 1</option>
+          <option value="placeHolder2">Placeholder 2</option>
+          <option value="placeHolder3">Placeholder 3</option>
+          <option value="placeHolder4">Placeholder 4</option>
+        </select>
 
-      <select name="heightRequirement" id="heightRequirement">
-        <option value="">Height Requirement</option>
-        <option value="placeHolder1">Placeholder 1</option>
-        <option value="placeHolder2">Placeholder 2</option>
-        <option value="placeHolder3">Placeholder 3</option>
-        <option value="placeHolder4">Placeholder 4</option>
-        <!-- Add options here -->
-      </select>
+        <select name="heightRequirement" id="heightRequirement">
+          <option value="">Height Requirement</option>
+          <option value="placeHolder1">Placeholder 1</option>
+          <option value="placeHolder2">Placeholder 2</option>
+          <option value="placeHolder3">Placeholder 3</option>
+          <option value="placeHolder4">Placeholder 4</option>
+        </select>
 
-      <select name="accessibilityOptions" id="accessibilityOptions">
-        <option value="">Interest Accessibility Options</option>
-        <option value="placeHolder1">Placeholder 1</option>
-        <option value="placeHolder2">Placeholder 2</option>
-        <option value="placeHolder3">Placeholder 3</option>
-        <option value="placeHolder4">Placeholder 4</option>
-        <!-- Add options here -->
-      </select>
+        <select name="accessibilityOptions" id="accessibilityOptions">
+          <option value="">Interest Accessibility Options</option>
+          <option value="placeHolder1">Placeholder 1</option>
+          <option value="placeHolder2">Placeholder 2</option>
+          <option value="placeHolder3">Placeholder 3</option>
+          <option value="placeHolder4">Placeholder 4</option>
+        </select>
 
-      <button type="submit" class="search-button">Search</button>
-    </div>
+        <button type="submit" class="search-button">Search</button>
+      </div>
 
       <section id="searchResults">
         <div class="searchResultImages">
@@ -209,35 +63,32 @@ footer {
       </section>
     </main>
     <footer>
-  <div class="footer-top">
-    <!-- Logo and top links -->
-    <div class="footer-logo">
-      <hr class="footer-line" />
-    </div>
-    <nav aria-label="Footer Links" class="footer-nav">
-      <ul class="top-links">
-        <li><a href="">About</a></li>
-        <li><a href="">Attractions</a></li>
-        <li><a href="">Pricing</a></li>
-        <li><a href="">Gallery</a></li>
-        <li><a href="">Team</a></li>
-      </ul>
-    </nav>
-  </div>
-  <div class="footer-bottom">
-    <!-- Bottom links -->
-    <nav aria-label="Footer Links" class="footer-nav">
-      <ul class="bottom-links">
-        <li><a href="">Privacy Policy</a></li>
-        <li><a href="">Terms of Service</a></li>
-        <li><a href="">Sales and Refunds</a></li>
-        <li><a href="">Legal</a></li>
-        <li><a href="">Contact</a></li>
-        <li><a href="">Site Map</a></li>
-      </ul>
-    </nav>
-  </div>
-</footer>
-
+      <div class="footer-top">
+        <div class="footer-logo">
+          <hr class="footer-line" />
+        </div>
+        <nav aria-label="Footer Links" class="footer-nav">
+          <ul class="top-links">
+            <li><a href="">About</a></li>
+            <li><a href="">Attractions</a></li>
+            <li><a href="">Pricing</a></li>
+            <li><a href="">Gallery</a></li>
+            <li><a href="">Team</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <nav aria-label="Footer Links" class="footer-nav">
+          <ul class="bottom-links">
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Terms of Service</a></li>
+            <li><a href="">Sales and Refunds</a></li>
+            <li><a href="">Legal</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Site Map</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
   </body>
 </html>
