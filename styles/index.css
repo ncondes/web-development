@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #feddbb;
+  padding: 10px 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  flex: 0 0 auto;
+}
+
+.logo img {
+  max-width: 100px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin-left: auto;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #2b405b;
+}
+
+.main-content {
+  padding: 10px;
+}
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider-images {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slider-images img {
+  width: 100%;
+  height: 50vh;
+  flex: 0 0 auto;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 35%;
+  transform: translateY(-50%);
+  background-color: #ddd;
+  color: black;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.information-cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+article {
+  width: 30%;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+}
+
+article header {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+article h3 {
+  margin: 0;
+}
+
+article p {
+  margin-bottom: 15px;
+}
+
+button {
+  background-color: #2b405b;
+  color: #feddbb;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button a {
+  color: #feddbb;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #feddbb;
+  color: #2b405b;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.footer-top,
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.footer-logo img {
+  max-width: 100px;
+  height: auto;
+}
+
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.footer-nav ul li a {
+  color: #2b405b;
+  text-decoration: none;
+}
+
+.footer-top {
+  border-bottom: 1px solid #2b405b;
+}

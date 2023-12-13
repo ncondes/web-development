@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles/index.css" />
   </head>
 
   <body>
@@ -21,20 +21,24 @@
       </nav>
     </header>
 
-    <main>
+    <main class="main-content">
       <section aria-label="Hero Slider">
-        <div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
-            eum?
-            <a>Book Now</a>
-          </p>
+        <div class="slider">
+          <div class="slider-images">
+            <img src="images/home-page-image-1.jpeg" alt="Image 1" />
+            <img src="images/home-page-image-2.jpeg" alt="Image 2" />
+            <img src="images/home-page-image-3.jpeg" alt="Image 3" />
+            <img src="images/home-page-image-4.jpeg" alt="Image 4" />
+          </div>
+          <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+          <button class="next" onclick="changeSlide(1)">&#10095;</button>
         </div>
       </section>
-      <section aria-label="Information Cards">
+
+      <section class="information-cards" aria-label="Information Cards">
         <article>
           <header>
-            <h3>Oppening Hours</h3>
+            <h3>Opening Hours</h3>
           </header>
           <div>
             <p>
@@ -46,7 +50,6 @@
             <button type="button"><a href="">Find out more</a></button>
           </div>
         </article>
-
         <article>
           <header>
             <h3>Ticket Prices</h3>
@@ -61,7 +64,6 @@
             <button type="button"><a href="">Find out more</a></button>
           </div>
         </article>
-
         <article>
           <header>
             <h3>Park Location</h3>
@@ -108,4 +110,7 @@
       </div>
     </footer>
   </body>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="scripts/index.js"></script>
 </html>
