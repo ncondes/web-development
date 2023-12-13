@@ -41,6 +41,53 @@ header {
   padding: 10px;
 }
 
+.plan-your-visit-image {
+  height: 50vh;
+  background-image: url("../images/plan-your-visit-image.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.information-cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+article {
+  width: 30%;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+}
+
+article header {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+article h3 {
+  margin: 0;
+}
+
+article p {
+  margin-bottom: 15px;
+}
+
+button {
+  background-color: #2b405b;
+  color: #feddbb;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button a {
+  color: #feddbb;
+  text-decoration: none;
+}
+
 footer {
   background-color: #feddbb;
   color: #2b405b;
