@@ -155,3 +155,19 @@ footer {
 .footer-top {
   border-bottom: 1px solid #2b405b;
 }
+
+.book-now {
+  text-align: center;
+}
+
+.book-now {
+  padding-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.book-now-button {
+  font-size: 40px;
+}
