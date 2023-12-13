@@ -88,6 +88,49 @@ button a {
   text-decoration: none;
 }
 
+.diningOptionsImages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.diningOptionsImages img {
+  width: calc(25% - 15px);
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+section[aria-label="Directions"] {
+  display: flex;
+  flex-direction: column;
+}
+
+section[aria-label="Directions"] header {
+  flex: 1;
+}
+
+.directions-container {
+  display: flex;
+}
+
+.directions-container .map-container {
+  flex: 1;
+}
+
+.directions-container .times-container {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.card {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: auto;
+}
+
 footer {
   background-color: #feddbb;
   color: #2b405b;
